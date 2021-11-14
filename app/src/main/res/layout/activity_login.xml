@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,7 +15,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="348dp"
-            android:layout_height="280dp"
+            android:layout_height="250dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -39,41 +39,30 @@
                     android:text="Login"
                     android:textSize="25sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/usr"
+                <EditText
+                    android:id="@+id/username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:hint="Username">
+                    android:hint="Username"
+                    android:fontFamily="@font/poppinsmedium">
+                </EditText>
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableEnd="@drawable/username_right"
-                        android:fontFamily="@font/poppinsmedium" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/psw"
+                <EditText
+                    android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-
-                    android:hint="Password">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableEnd="@drawable/password_right"
-                        android:fontFamily="@font/poppinsmedium" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:hint="Password"
+                    android:fontFamily="@font/poppinsmedium">
+                </EditText>
 
                 <TextView
-                    android:id="@+id/forgotpsw"
+                    android:id="@+id/forgotpassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -110,14 +99,14 @@
                 android:layout_weight="1" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/signin"
+                android:id="@+id/loginBtn"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/poppinsbold"
                 android:gravity="center"
-                android:text="SIGN IN"
+                android:text="LOGIN"
                 android:textColor="#fff"
                 android:textSize="22sp"
                 app:cornerRadius="20dp">
@@ -166,12 +155,12 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/signup"
+                android:id="@+id/register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:fontFamily="@font/poppinsmedium"
-                android:text="Sign Up"
+                android:text="Register"
                 android:textColor="#3F51B5"
                 android:textSize="20sp" />
         </LinearLayout>
